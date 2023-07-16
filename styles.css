@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    --text-color: ghostwhite;
+    --background-color: black;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.insta:hover {
+    color: rgb(138, 14, 150);
+    cursor: pointer;
+}
+
+
+#nav {
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    justify-content: space-around;
+    border-bottom: 1px solid var(--text-color);
+    z-index: 1000;
+}
+
+.nav-button {
+    font-size: 1rem;
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+
+#comics {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown a {
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--text-color);
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--background-color);
+    text-decoration: none;
+    display: block;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.dropdown-content a:hover {background-color: rgb(172, 172, 172);}
+.dropdown:hover #comics {background-color: var(--text-color);}
+.dropdown:hover #comics {color: var(--background-color)}
+
+#amok {
+    font-family: 'Lexend Peta', sans-serif;
+    color: rgb(17, 17, 17);
+    text-shadow: 0 0 2px var(--text-color), 0 0 2px var(--text-color), 
+    0 0 2px var(--text-color), 0 0 2px var(--text-color);
+}
+
+#amok:hover {
+    background-image: url(/imgs/Amok.png);
+    background-position:center;
+    background-size: cover;
+    transition: 5s;
+}
+
+#onebc {
+    font-family: 'Lilita One', cursive;
+    color: rgb(17, 17, 184);
+    text-shadow: 0 0 2px var(--text-color), 0 0 2px var(--text-color), 
+    0 0 2px var(--text-color), 0 0 2px var(--text-color);
+}
+
+#onebc:hover {
+    background-image: url(/imgs/OneBadCat.png);
+    background-position:center;
+    background-size: cover;
+    transition: 5s;
+}
+#amok,
+#onebc {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*HOME IMGS*/
+
+#BoN-Head-Img {
+    width: 100%;
+}
+
+
+/*FOOTER*/
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.exit-info {
+    width: 90%;
+    font-size: 12px;
+    border: 2px solid var(--text-color);
+    padding-left: 20px; padding-right: 20px;
+    box-shadow: 0 0 3px var(--text-color), 0 0 3px var(--text-color), 
+    0 0 3px var(--text-color), 0 0 3px var(--text-color);
+
+}
+
+.trademark {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 8px;
+    text-align: center;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 300px){ 
+    .nav-button {
+        font-size: 0.8rem;
+    }
+
+    .dropdown-content {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 500px){ 
+    .nav-button {
+        font-size: 1.5rem;
+    }
+
+    .dropdown-content {
+        font-size: 1.5rem;
+    }
+
+    .exit-info {
+        font-size: 16px;
+    }
+
+    .trademark {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 800px){ 
+    .nav-button {
+        font-size: 2rem;
+    }
+
+    .dropdown-content {
+        font-size: 2rem;
+    }
+
+    .trademark {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1000px){ 
+    .nav-button {
+        font-size: 3rem;
+    }
+
+    .dropdown-content {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .dropdown:hover .dropdown-content {display: block;};
+}
+
+@media screen and (min-width: 1300px){ 
+    .nav-button {
+        font-size: 4.5rem;
+    }
+
+    .dropdown-content {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 1800px){ 
+    .nav-button {
+        font-size: 6rem;
+    }
+
+    .dropdown-content {
+        font-size: 6rem;
+    }
+
+    .dropdown-content a {
+        height: 200px;
+    }
+
+    .exit-info {
+        font-size: 24px;
+    }
+
+    .trademark {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 2300px){ 
+    .nav-button {
+        font-size: 7rem;
+    }
+
+    .dropdown-content {
+        font-size: 7rem;
+    }
+
+}

@@ -1,0 +1,687 @@
+/*CONTACT SECTION*/
+  
+#about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    --text-color: ghostwhite;
+    --background-color: black;
+}
+
+#left {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+#digital-hiphop {
+    margin-top: 50px;
+}
+
+.digital-letters {
+    font-size: 40px;
+    color: var(--text-color);
+    font-family: 'VT323', monospace;
+    margin: 20px;
+}
+
+.glow {
+    animation: glow;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+}
+
+#letter-burnout {
+                        /*Flickering bulb animation cycle*/
+    animation: glow 0.1s 0s 150, burnout 30ms linear 15s 1, flicker 3s linear 22s 1, glow 0.1s 25s infinite;
+    color: var(--background-color);
+    text-shadow: 0 0 1px var(--text-color), 0 0 1px var(--text-color), 
+    0 0 1px var(--text-color), 0 0 1px var(--text-color);
+}
+
+h2>span:nth-child(even) {
+    top: 20px;
+    position: relative;
+}
+
+#digital,
+#hiphop {
+    text-align: center;
+}
+
+#music-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.music {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid var(--text-color);
+    color: var(--text-color);
+    width: 95%;
+}
+
+.musicChoices {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.musicI {
+    width: 8em;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: var(--text-color);
+    margin: 1vw;
+    border-radius: 20px;
+    
+}
+
+.spotify {
+    font-family: sans-serif;
+    transition: box-shadow 0.2s;
+    background: rgb(30,215,97);
+    background: radial-gradient(circle, rgba(30,215,97,1) 0%, rgba(29,185,84,1) 100%);
+    
+}
+.spotify:hover,
+.bandcamp:hover,
+.soundcloud:hover,
+.apple:hover  {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.bandcamp {
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    transition: box-shadow 0.2s;
+    background: rgb(88,141,157);
+    background: linear-gradient(180deg, rgba(88,141,157,1) 0%, rgba(116,180,199,1) 100%);
+}
+
+.soundcloud {
+    font-family: sans-serif;
+    transition: box-shadow 0.2s;
+    background: rgb(255,149,51);
+    background: linear-gradient(180deg, rgba(255,149,51,1) 0%, rgba(255,88,54,1) 100%);
+}
+
+
+.apple {
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    transition: box-shadow 0.2s;
+    background: rgb(249,76,87);
+    background: radial-gradient(circle, rgba(249,76,87,1) 0%, rgba(252,60,68,1) 100%);
+}
+
+
+.musicT {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+
+
+
+/*RESUME*/
+
+#resume {
+    font-size: 12px;
+    color: var(--text-color);
+    font-family:'Courier New', Courier, monospace;
+}
+
+.resumeT {
+    color: var(--text-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#resume-name,
+#resume-title {
+    text-align: center;
+}
+
+#resume-title-desc {
+    padding: 20px;
+}
+
+.abilities {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/*TABLE*/
+
+#availability {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    margin-top: 30px;
+}
+
+tr, td, th {
+    border: 1px solid rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    padding: 10px;
+    text-align: center;
+  
+}
+
+  
+  table {
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    letter-spacing: 1px;;
+
+}
+  
+  .suns {
+    opacity: 0.3;
+}
+  
+  .afterSuns {
+    opacity: 0.3;
+}
+  
+  .night {
+    opacity: 0.3;
+}
+  
+
+  #morning>:nth-child(2),
+  #morning>:nth-child(3),
+  #morning>:nth-child(4),
+  #morning>:nth-child(5),
+  #morning>:nth-child(6),
+  #afternoon>:nth-child(2),
+  #afternoon>:nth-child(3),
+  #afternoon>:nth-child(4),
+  #afternoon>:nth-child(5),
+  #afternoon>:nth-child(6),
+  #morning>:nth-child(8),
+  #afternoon>:nth-child(8),
+  #evening>:nth-child(8) {
+    background-color: red;
+}
+
+
+/*SOCIALS*/
+
+.socialsT {
+    margin-top: 50px;
+    color: var(--text-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#socials-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#socials-container a {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#socials-container a:hover  {
+    transform: scale(1.1);
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.social-link h4 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.ng-brand {
+    width: 40px;
+}
+
+.fa-github,
+.fa-instagram {
+    font-size: 40px;
+}
+
+.instagram-btn {
+    background: rgb(0,34,150);
+    background: linear-gradient(90deg, rgba(0,34,150,1) 0%, rgba(130,0,143,1) 15%, rgba(192,0,120,1) 32%, rgba(234,12,95,1) 45%, rgba(255,83,65,1) 57%, rgba(255,136,32,1) 73%, rgba(246,186,0,1) 96%);
+}
+
+.newgrounds-btn {
+    background: rgb(246,186,0);
+    background: linear-gradient(180deg, rgba(246,186,0,1) 0%, rgba(164,10,5,1) 73%);
+}
+
+.github-btn {
+    background-color: #2b2f33;
+}
+
+
+/*IMGS*/
+
+
+#BoN-Poster {
+    width: 90%;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#BoN-Poster:hover {
+    box-shadow: 1px 2px 2px var(--text-color);
+    transition: 0.1s;
+}
+
+/*MODAL*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: var(--text-color);
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.close {
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*ANIMATIONS*/
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+@keyframes glow {
+    0% {text-shadow: 0 0 15px rgb(255, 255, 255);}
+    0% {color: var(--text-color);}
+    100% {text-shadow: 0 0 14px rgb(255, 255, 255);}
+    100% {color: var(--text-color);}
+}
+
+@keyframes burnout { /*lightbulb burnout animation*/
+    0% {text-shadow: 0 0 15px rgb(255, 255, 255);}
+    0% {color: var(--text-color);}
+    50% {text-shadow: 0 0 50px rgb(255, 255, 255);}
+    100% {text-shadow: 0 0 1px var(--text-color), 0 0 1px var(--text-color), 
+        0 0 1px var(--text-color), 0 0 1px var(--text-color);;}
+    100% {color: var(--background-color);}
+    
+}
+
+@keyframes flicker { /*lightbulb refreshing animation*/
+    0% {text-shadow: 0 0 15px rgb(255, 255, 255);}
+    0% {color: var(--text-color);}
+    1% {text-shadow: 0 0 1px var(--text-color), 0 0 1px var(--text-color), 
+        0 0 1px var(--text-color), 0 0 1px var(--text-color);;}
+    1% {color: var(--background-color);}
+    25% {text-shadow: 0 0 15px rgb(255, 255, 255);}
+    25% {color: var(--text-color);}
+    26% {text-shadow: 0 0 1px var(--text-color), 0 0 1px var(--text-color), 
+        0 0 1px var(--text-color), 0 0 1px var(--text-color);;}
+    26% {color: var(--background-color);}
+    27% {text-shadow: 0 0 15px rgb(255, 255, 255);}
+    27% {color: var(--text-color);}
+    28% {text-shadow: 0 0 1px var(--text-color), 0 0 1px var(--text-color), 
+        0 0 1px var(--text-color), 0 0 1px var(--text-color);;}
+    28% {color: var(--background-color);}
+    75% {text-shadow: 0 0 15px rgb(255, 255, 255);}
+    75% {color: var(--text-color);}
+    76% {text-shadow: 0 0 1px var(--text-color), 0 0 1px var(--text-color), 
+        0 0 1px var(--text-color), 0 0 1px var(--text-color);;}
+    76% {color: var(--background-color);}
+    77% {text-shadow: 0 0 15px rgb(255, 255, 255);}
+    77% {color: var(--text-color);}
+    78% {text-shadow: 0 0 1px var(--text-color), 0 0 1px var(--text-color), 
+        0 0 1px var(--text-color), 0 0 1px var(--text-color);;}
+    78% {color: var(--background-color);}
+    100% {text-shadow: 0 0 15px rgb(255, 255, 255);}
+    100% {color: var(--text-color);}
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 320px) {
+    .digital-letters {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    #availability {
+        display: flex;
+    }
+
+    .digital-letters {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #socials-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-link {
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+    }
+    
+    .social-link h4 {
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .ng-brand {
+        width: 60px;
+    }
+    
+    .fa-github,
+    .fa-instagram {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .abilities {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    
+    .digital-letters {
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    
+    .digital-letters {
+        font-size: 80px;
+    }
+
+    tr, td, th {
+        font-size: 12px;
+    }
+
+    .musicChoices {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .social-link {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .social-link h4 {
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .ng-brand {
+        width: 30px;
+    }
+    
+    .fa-github,
+    .fa-instagram {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    
+    .digital-letters {
+        font-size: 100px;
+    }
+
+    tr, td, th {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    
+    .musicChoices {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    #about-content {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
+
+    #left {
+        width: 60%;
+    }
+    
+    #right {
+        width: 40%;
+    }
+
+    #resume {
+        font-size: 12px;
+    }
+
+    .music {
+        font-size: 12px;
+    }
+
+    .socialsT {
+        font-size: 12px;
+    }
+
+    .digital-letters {
+        font-size: 60px;
+    }
+
+    .musicChoices {
+        font-size: 40px;
+    }
+
+    .social-link {
+        width: 150px;
+        height: 100px;
+    }
+    
+    .social-link h4 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .ng-brand {
+        width: 45px;
+    }
+    
+    .fa-github,
+    .fa-instagram {
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #resume {
+        font-size: 16px;
+    }
+
+    .socialsT {
+        font-size: 16px;
+    }
+
+    .music {
+        font-size: 16px;
+    }
+
+    .digital-letters {
+        font-size: 80px;
+    }
+
+    tr, td, th {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .social-link {
+        width: 250px;
+        height: 100px;
+    }
+    
+    .social-link h4 {
+        font-size: 28px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .ng-brand {
+        width: 60px;
+    }
+    
+    .fa-github,
+    .fa-instagram {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    .musicChoices {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+    #resume {
+        font-size: 24px;
+    }
+
+    .socialsT {
+        font-size: 24px;
+    }
+
+    .music {
+        font-size: 24px;
+    }
+
+    .digital-letters {
+        font-size: 120px;
+    }
+
+    tr, td, th {
+        font-size: 30px;
+    }
+
+    .social-link {
+        width: 300px;
+        height: 125px;
+    }
+    
+    .social-link h4 {
+        font-size: 34px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .ng-brand {
+        width: 70px;
+    }
+    
+    .fa-github,
+    .fa-instagram {
+        font-size: 70px;
+    }
+}

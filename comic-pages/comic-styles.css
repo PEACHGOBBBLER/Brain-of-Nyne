@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: var(--text-color);
+    --text-color: ghostwhite;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.insta:hover {
+    color: rgb(138, 14, 150);
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 40%;
+}
+
+.info-container h2 {
+    font-size: 50px;
+}
+
+.info-container .comic-description {
+    text-align: center;
+    font-size: 20px;
+}
+
+.info-container button {
+    font-size: 30px;
+    box-shadow: 0 0 5px var(--text-color);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.info-container button:hover {
+    color: var(--text-color);
+    background-color: black;
+    box-shadow: 0 0 7px var(--text-color);
+}
+
+.comic-title {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.about {
+    width: 90%;
+    font-size: 16px;
+    border: 2px solid var(--text-color);
+    padding-left: 20px; padding-right: 20px;
+    box-shadow: 0 0 3px var(--text-color), 0 0 3px var(--text-color), 0 0 3px var(--text-color), 0 0 3px var(--text-color);
+
+}
+
+.trademark {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 8px;
+    text-align: center;
+}
+
+/*IMGS*/
+
+.comic-img {
+    width: 600px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-container {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .comic-title {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .about {
+        font-size: 12px;   
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .info-container .comic-description {
+        font-size: 16px;
+    }
+    .info-container h2 {
+        font-size: 30px;
+    }
+
+    .comic-img {
+        width: 400px;
+    }
+
+    .info-container button {
+        font-size: 24px;
+    }
+
+    .about {
+        font-size: 10px;   
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .info-container .comic-description {
+        font-size: 12px;
+    }
+    .info-container h2 {
+        font-size: 24px;
+    }
+
+    .comic-img {
+        width: 250px;
+    }
+
+    .info-container button {
+        font-size: 18px;
+    }
+
+    .about {
+        font-size: 8px;   
+    }
+}
+
