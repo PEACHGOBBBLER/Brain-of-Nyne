@@ -94,7 +94,7 @@ a {
 }
 
 #amok:hover {
-    background-image: url(/imgs/Amok.png);
+    background-image: url(./imgs/Amok.png);
     background-position:center;
     background-size: cover;
     transition: 5s;
@@ -108,7 +108,7 @@ a {
 }
 
 #onebc:hover {
-    background-image: url(/imgs/OneBadCat.png);
+    background-image: url(./imgs/OneBadCat.png);
     background-position:center;
     background-size: cover;
     transition: 5s;
